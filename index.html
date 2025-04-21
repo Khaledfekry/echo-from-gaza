@@ -9,17 +9,18 @@
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f4f4f4;
-      color: #222;
+      color: #555; /* اللون الرمادي للنص */
     }
     header {
       background: linear-gradient(to left, #e60000, #ffffff, #000000, #007a3d);
       color: #333;
-      padding: 1.5rem 1rem;
+      padding: 2rem 1rem;
       text-align: center;
       position: relative;
+      border-bottom: 5px solid #b30000;
     }
     header img {
-      height: 80px;
+      height: 90px;
       position: absolute;
       left: 1rem;
       top: 50%;
@@ -27,13 +28,13 @@
     }
     header h1 {
       margin: 0;
-      font-size: 2.2rem;
+      font-size: 2.5rem;
       font-weight: bold;
       color: #222;
     }
     header p {
       margin: 0.5rem 0 0;
-      font-size: 1rem;
+      font-size: 1.2rem;
       color: #444;
       font-weight: 500;
     }
@@ -46,8 +47,13 @@
       background: white;
       border-radius: 1rem;
       box-shadow: 0 0 15px rgba(0,0,0,0.1);
-      padding: 1rem;
+      padding: 1.5rem;
       margin-bottom: 2rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(0,0,0,0.2);
     }
     .card img {
       width: 100%;
@@ -57,42 +63,15 @@
     .card h2 {
       margin: 0;
       color: #b30000;
+      font-size: 1.8rem;
     }
     .card p {
       line-height: 1.8;
+      font-size: 1.1rem;
+      color: #666;
     }
     footer {
       text-align: center;
-      font-size: 0.9rem;
-      padding: 2rem 1rem;
-      background-color: #222;
-      color: white;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <img src="https://github.com/Khaledfekry/echo-from-gaza/raw/main/phoenix-logo.png" alt="شعار صوت من غزة">
-    <h1>صوت من غزة | Echo from Gaza</h1>
-    <p>نحكي عنهم، لنُبقيهم أحياء في الذاكرة</p>
-  </header>
-
-  <div class="container">
-    <div class="card">
-      <h2>محمد الدرة</h2>
-      <img src="https://github.com/Khaledfekry/echo-from-gaza/raw/main/mohamed.png" alt="الشهيد محمد الدرة">
-      <p>استشهد الطفل محمد الدرة في 30 سبتمبر 2000 أثناء تغطية صحفية لاجتياح الاحتلال في غزة. لُقّب بـ"أيقونة الانتفاضة"، وأصبحت صورته رمزًا عالميًا للمظلومية الفلسطينية.</p>
-    </div>
-
-    <div class="card">
-      <h2>حمزة نصار</h2>
-      <img src="https://github.com/Khaledfekry/echo-from-gaza/raw/main/Hamza%20Nasar.png" alt="الشهيد حمزة نصار">
-      <p>استشهد الطفل حمزة نصار خلال عدوان مايو 2021 على غزة، وأصبحت صورته رمزًا مؤلمًا للبراءة تحت القصف، وتداولتها وسائل الإعلام عالميًا.</p>
-    </div>
-  </div>
-
-  <footer>
-    Echo from Gaza | صوت من غزة &copy; 2025
-  </footer>
-</body>
-</html>
+      font-size: 1rem;
+      padding: 1.5rem 1rem;
+      background

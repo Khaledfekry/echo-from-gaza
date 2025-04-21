@@ -1,69 +1,95 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>صوت من غزة | Echo from Gaza</title>
   <style>
     body {
+      margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f4f4f4;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(to left, #e60000, #ffffff, #000000, #007a3d);
+      color: white;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      position: relative;
+    }
+    header img {
+      height: 60px;
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    header h1 {
       margin: 0;
-      padding: 2rem;
-    }
-    .container {
-      max-width: 700px;
-      margin: auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 1rem;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
-    }
-    h1 {
-      color: #b30000;
       font-size: 2rem;
     }
-    p {
-      line-height: 1.8;
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1rem;
+      color: #fffdd0;
     }
-    img {
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .card {
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      padding: 1rem;
+      margin-bottom: 2rem;
+    }
+    .card img {
       width: 100%;
       border-radius: 0.5rem;
-      margin-top: 1rem;
-      display: block;
+      margin-bottom: 1rem;
     }
-    .footer {
+    .card h2 {
+      margin: 0;
+      color: #b30000;
+    }
+    .card p {
+      line-height: 1.8;
+    }
+    footer {
       text-align: center;
       font-size: 0.9rem;
-      margin-top: 2rem;
-      color: gray;
+      padding: 2rem 1rem;
+      background-color: #222;
+      color: white;
     }
   </style>
 </head>
 <body>
+  <header>
+    <img src="https://github.com/Khaledfekry/echo-from-gaza/raw/main/phoenix-logo.png" alt="شعار صوت من غزة">
+    <h1>صوت من غزة | Echo from Gaza</h1>
+    <p>نحكي عنهم، لنُبقيهم أحياء في الذاكرة</p>
+  </header>
 
-  <!-- محمد الدرة -->
   <div class="container">
-    <h1>شهيد اليوم: محمد الدرة</h1>
-    <p>استشهد الطفل محمد الدرة في 30 سبتمبر 2000 أثناء اجتياح الاحتلال لقطاع غزة، وأصبحت صورته رمزًا للمظلومية الفلسطينية.</p>
-<img src="https://github.com/Khaledfekry/echo-from-gaza/blob/main/mohamed.jpg" alt="الشهيد محمد الدرة">
-    <hr>
-    <p><strong>Today's Martyr: Mohammed Al-Durrah</strong><br>
-    Killed on September 30, 2000 during Israeli aggression in Gaza. His final moments, captured on video, became an icon of Palestinian suffering.</p>
+    <div class="card">
+      <h2>محمد الدرة</h2>
+      <img src="https://github.com/Khaledfekry/echo-from-gaza/raw/main/mohamed.png" alt="الشهيد محمد الدرة">
+      <p>استشهد الطفل محمد الدرة في 30 سبتمبر 2000 أثناء تغطية صحفية لاجتياح الاحتلال في غزة. لُقّب بـ"أيقونة الانتفاضة"، وأصبحت صورته رمزًا عالميًا للمظلومية الفلسطينية.</p>
+    </div>
+
+    <div class="card">
+      <h2>حمزة نصار</h2>
+      <img src="https://github.com/Khaledfekry/echo-from-gaza/raw/main/Hamza%20Nasar" alt="الشهيد حمزة نصار">
+      <p>استشهد الطفل حمزة نصار خلال عدوان مايو 2021 على غزة، وأصبحت صورته رمزًا مؤلمًا للبراءة تحت القصف، وتداولتها وسائل الإعلام عالميًا.</p>
+    </div>
   </div>
 
-  <!-- حمزة نصار -->
-  <div class="container">
-    <h1>شهيد اليوم: حمزة نصار</h1>
-    <p>الطفل حمزة نصار، 11 عامًا، استشهد خلال العدوان على غزة في مايو 2021. صورته أصبحت أيقونة تمثل براءة الأطفال وسط الحرب.</p>
-    <img src="https://github.com/Khaledfekry/echo-from-gaza/raw/main/Hamza%20Nasar.png" alt="الشهيد حمزة نصار">
-    <hr>
-    <p><strong>Today's Martyr: Hamza Nassar</strong><br>
-    An 11-year-old boy killed during the Israeli assault on Gaza in May 2021. His image became a symbol of innocent childhood lost in war.</p>
-  </div>
-
-  <div class="footer">Echo from Gaza | صوت من غزة</div>
-
+  <footer>
+    Echo from Gaza | صوت من غزة &copy; 2025
+  </footer>
 </body>
 </html>
